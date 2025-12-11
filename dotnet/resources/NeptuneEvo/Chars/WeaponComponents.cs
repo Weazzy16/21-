@@ -115,7 +115,7 @@ namespace NeptuneEvo.Chars
             },
 
 			// Heavy Pistol / Revolver / Pistol50
-			{ NAPI.Util.GetHashKey("WEAPON_HEAVYPISTOL"), new wComponentsData(4, new Dictionary<uint, wComponentData>()
+			{ NAPI.Util.GetHashKey("WEAPON_HEAVYPISTOL"), new wComponentsData(3, new Dictionary<uint, wComponentData>()
                 {
                     { NAPI.Util.GetHashKey("COMPONENT_HEAVYPISTOL_CLIP_01"), new wComponentData("WCT_CLIP1", "WCD_HPST_CLIP1", 0, wComponentsType.Clip) },
                     { NAPI.Util.GetHashKey("COMPONENT_AT_PI_FLSH"), new wComponentData("WCT_FLASH", "WCD_FLASH", 900, wComponentsType.Flashlight) },
@@ -123,7 +123,7 @@ namespace NeptuneEvo.Chars
                 })
             },
 
-            { NAPI.Util.GetHashKey("WEAPON_REVOLVER"), new wComponentsData(3, new Dictionary<uint, wComponentData>()
+            { NAPI.Util.GetHashKey("WEAPON_REVOLVER"), new wComponentsData(2, new Dictionary<uint, wComponentData>()
                 {
                     { NAPI.Util.GetHashKey("COMPONENT_REVOLVER_CLIP_01"), new wComponentData("WCT_CLIP1", "WCD_CLIP1", 0, wComponentsType.Clip) },
                     { NAPI.Util.GetHashKey("COMPONENT_AT_PI_FLSH"), new wComponentData("WCT_FLASH", "WCD_FLASH", 900, wComponentsType.Flashlight) },
@@ -165,7 +165,7 @@ namespace NeptuneEvo.Chars
                     { NAPI.Util.GetHashKey("COMPONENT_AT_AR_SUPP"), new wComponentData("WCT_SUPP", "WCD_AR_SUPP", 1100, wComponentsType.Suppressor) },
                 })
             },
-{ NAPI. Util.GetHashKey("WEAPON_CARBINERIFLE_MK2"), new wComponentsData(7, new Dictionary<uint, wComponentData>()
+{ NAPI. Util.GetHashKey("WEAPON_CARBINERIFLE_MK2"), new wComponentsData(8, new Dictionary<uint, wComponentData>()
     {
         // ✅ БАЗОВЫЙ МАГАЗИН (ОБЯЗАТЕЛЕН!)
         { NAPI.Util.GetHashKey("COMPONENT_CARBINERIFLE_MK2_CLIP_01"), new wComponentData("WCT_CLIP1", "WCD_CR_CLIP1", 0, wComponentsType.Clip) },
