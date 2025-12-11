@@ -115,7 +115,7 @@ namespace NeptuneEvo.Chars
             },
 
 			// Heavy Pistol / Revolver / Pistol50
-			{ NAPI.Util.GetHashKey("WEAPON_HEAVYPISTOL"), new wComponentsData(4, new Dictionary<uint, wComponentData>()
+			{ NAPI.Util.GetHashKey("WEAPON_HEAVYPISTOL"), new wComponentsData(3, new Dictionary<uint, wComponentData>()
                 {
                     { NAPI.Util.GetHashKey("COMPONENT_HEAVYPISTOL_CLIP_01"), new wComponentData("WCT_CLIP1", "WCD_HPST_CLIP1", 0, wComponentsType.Clip) },
                     { NAPI.Util.GetHashKey("COMPONENT_AT_PI_FLSH"), new wComponentData("WCT_FLASH", "WCD_FLASH", 900, wComponentsType.Flashlight) },
@@ -123,7 +123,7 @@ namespace NeptuneEvo.Chars
                 })
             },
 
-            { NAPI.Util.GetHashKey("WEAPON_REVOLVER"), new wComponentsData(3, new Dictionary<uint, wComponentData>()
+            { NAPI.Util.GetHashKey("WEAPON_REVOLVER"), new wComponentsData(2, new Dictionary<uint, wComponentData>()
                 {
                     { NAPI.Util.GetHashKey("COMPONENT_REVOLVER_CLIP_01"), new wComponentData("WCT_CLIP1", "WCD_CLIP1", 0, wComponentsType.Clip) },
                     { NAPI.Util.GetHashKey("COMPONENT_AT_PI_FLSH"), new wComponentData("WCT_FLASH", "WCD_FLASH", 900, wComponentsType.Flashlight) },
@@ -165,7 +165,7 @@ namespace NeptuneEvo.Chars
                     { NAPI.Util.GetHashKey("COMPONENT_AT_AR_SUPP"), new wComponentData("WCT_SUPP", "WCD_AR_SUPP", 1100, wComponentsType.Suppressor) },
                 })
             },
-{ NAPI. Util.GetHashKey("WEAPON_CARBINERIFLE_MK2"), new wComponentsData(7, new Dictionary<uint, wComponentData>()
+{ NAPI.Util.GetHashKey("WEAPON_CARBINERIFLE_MK2"), new wComponentsData(8, new Dictionary<uint, wComponentData>()
     {
         // ✅ БАЗОВЫЙ МАГАЗИН (ОБЯЗАТЕЛЕН!)
         { NAPI.Util.GetHashKey("COMPONENT_CARBINERIFLE_MK2_CLIP_01"), new wComponentData("WCT_CLIP1", "WCD_CR_CLIP1", 0, wComponentsType.Clip) },
@@ -174,12 +174,12 @@ namespace NeptuneEvo.Chars
         { NAPI.Util.GetHashKey("COMPONENT_CARBINERIFLE_MK2_CLIP_02"), new wComponentData("WCT_CLIP2", "WCD_CR_CLIP2", 0, wComponentsType.Clip) },
         
         // ✅ БРОНЕБОЙНЫЙ МАГАЗИН
-        { NAPI. Util.GetHashKey("COMPONENT_CARBINERIFLE_MK2_CLIP_ARMORPIERCING"), new wComponentData("WCT_CLIP_AP", "WCD_CLIP_AP", 0, wComponentsType.Clip2) },
+        { NAPI.Util.GetHashKey("COMPONENT_CARBINERIFLE_MK2_CLIP_ARMORPIERCING"), new wComponentData("WCT_CLIP_AP", "WCD_CLIP_AP", 0, wComponentsType.Clip2) },
 
         { NAPI.Util.GetHashKey("COMPONENT_AT_AR_SUPP"), new wComponentData("WCT_SUPP", "WCD_AR_SUPP", 1100, wComponentsType.Suppressor) },
         { NAPI.Util.GetHashKey("COMPONENT_AT_SCOPE_MEDIUM_MK2"), new wComponentData("WCT_SCOPE_MED", "WCD_SCOPE_MED", 1400, wComponentsType.Scope) },
         { NAPI.Util.GetHashKey("COMPONENT_AT_SIGHTS"), new wComponentData("WCT_HOLO", "WCD_HOLO", 1500, wComponentsType.Scope2) },
-        { NAPI.Util.GetHashKey("COMPONENT_AT_AR_FLSH"), new wComponentData("WCT_FLASH", "WCD_FLASH", 900, wComponentsType. Flashlight) },
+        { NAPI.Util.GetHashKey("COMPONENT_AT_AR_FLSH"), new wComponentData("WCT_FLASH", "WCD_FLASH", 900, wComponentsType.Flashlight) },
         { NAPI.Util.GetHashKey("COMPONENT_AT_AR_AFGRIP"), new wComponentData("WCT_GRIP", "WCD_GRIP", 1300, wComponentsType.Grip) },
     })
 },
@@ -439,7 +439,7 @@ namespace NeptuneEvo.Chars
                         }
                     }
 
-                    // ✅ ШАГ 1: ВСЕГДА ДОБАВЛЯЕМ БАЗОВЫЙ МАГАЗИН ПЕРВЫМ (если есть)
+                    // ✅ ШАГ 1: НАХОДИМ БАЗОВЫЙ МАГАЗИН (но не добавляем его сразу)
                     uint? baseClipHash = null;
 
                     // Ищем CLIP_01 (базовый магазин)
@@ -454,26 +454,24 @@ namespace NeptuneEvo.Chars
                         }
                     }
 
-                    if (baseClipHash.HasValue)
-                    {
-                        _JsonInventoryItemData.Add(baseClipHash.Value);
-                        Log.Write($"[WEAPONCOMPONENTS] Added BASE CLIP (CLIP_01): {baseClipHash.Value}");
-                    }
-
-                    // ✅ ШАГ 2: ДОБАВЛЯЕМ УСТАНОВЛЕННЫЕ МАГАЗИНЫ
+                    // ✅ ШАГ 2: ДОБАВЛЯЕМ УСТАНОВЛЕННЫЕ МАГАЗИНЫ (только один магазин!)
                     if (installedMods.ContainsKey(wComponentsType.Clip2))
                     {
+                        // Если установлен бронебойный магазин - используем только его
                         _JsonInventoryItemData.Add(installedMods[wComponentsType.Clip2]);
                         Log.Write($"[WEAPONCOMPONENTS] Added Clip2 (AP): {installedMods[wComponentsType.Clip2]}");
                     }
                     else if (installedMods.ContainsKey(wComponentsType.Clip))
                     {
-                        // Проверяем, не базовый ли это магазин
-                        if (!baseClipHash.HasValue || installedMods[wComponentsType.Clip] != baseClipHash.Value)
-                        {
-                            _JsonInventoryItemData.Add(installedMods[wComponentsType.Clip]);
-                            Log.Write($"[WEAPONCOMPONENTS] Added extended Clip:  {installedMods[wComponentsType.Clip]}");
-                        }
+                        // Если установлен увеличенный магазин - используем его
+                        _JsonInventoryItemData.Add(installedMods[wComponentsType.Clip]);
+                        Log.Write($"[WEAPONCOMPONENTS] Added extended Clip: {installedMods[wComponentsType.Clip]}");
+                    }
+                    else if (baseClipHash.HasValue)
+                    {
+                        // Если никакой другой магазин не установлен - используем базовый
+                        _JsonInventoryItemData.Add(baseClipHash.Value);
+                        Log.Write($"[WEAPONCOMPONENTS] Added BASE CLIP (CLIP_01): {baseClipHash.Value}");
                     }
 
                     // ✅ ШАГ 3: ДОБАВЛЯЕМ ОСТАЛЬНЫЕ МОДИФИКАЦИИ

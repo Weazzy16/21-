@@ -1,6 +1,6 @@
 is_global = true
 build_property.RootNamespace = Localization
-build_property.ProjectDir = D:\Majestic-server\dotnet\resources\Localization\
+build_property.ProjectDir = /home/runner/work/21-/21-/dotnet/resources/Localization/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false

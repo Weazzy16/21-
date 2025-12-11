@@ -1,6 +1,6 @@
 is_global = true
 build_property.RootNamespace = NeptuneEvoSDK
-build_property.ProjectDir = D:\Majestic-server\dotnet\resources\NeptuneEvoSDK\
+build_property.ProjectDir = /home/runner/work/21-/21-/dotnet/resources/NeptuneEvoSDK/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false
