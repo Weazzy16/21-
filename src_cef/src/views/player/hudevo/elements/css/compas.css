@@ -1,0 +1,293 @@
+.compass-wrapper[data-v-f24a0ae4] {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.fade-up-animation[data-v-82d800f6] {
+    animation: fadeOutUp-82d800f6 1s ease
+}
+
+.fade-down-animation[data-v-82d800f6] {
+    animation: fadeOutDown-82d800f6 1s ease
+}
+
+@keyframes fadeOutUp-82d800f6 {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+        background-color: #40b6ff;
+        color: #fff
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-100%);
+        background-color: #40b6ff;
+        color: #fff
+    }
+}
+
+@keyframes fadeOutDown-82d800f6 {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+        background-color: #071e30;
+        color: #fff
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(100%);
+        background-color: #071e30;
+        color: #fff
+    }
+}
+
+.logotype-enter-active[data-v-82d800f6] {
+    animation: logotype-82d800f6 .5s ease
+}
+
+.logotype-leave-active[data-v-82d800f6] {
+    animation: logotype-82d800f6 .5s ease reverse
+}
+
+@keyframes logotype-82d800f6 {
+    0% {
+        transform: scale(0);
+        opacity: 0
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1
+    }
+}
+
+.cardMoveIn[data-v-82d800f6] {
+    animation: cardMoveInside-82d800f6 ease forwards;
+    animation-duration: 2s
+}
+
+.cardMoveOut[data-v-82d800f6] {
+    animation: cardMoveOutside-82d800f6 ease forwards;
+    animation-duration: 2s
+}
+
+@keyframes cardMoveOutside-82d800f6 {
+    0% {
+        right: 27.7777777778vh
+    }
+
+    to {
+        right: 1.0185185185vh
+    }
+}
+
+@keyframes cardMoveInside-82d800f6 {
+    0% {
+        right: 1.0185185185vh
+    }
+
+    to {
+        right: 27.7777777778vh
+    }
+}
+
+@keyframes borderBlink-82d800f6 {
+    0% {
+        opacity: .5
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.fade-enter[data-v-82d800f6],.fade-leave-to[data-v-82d800f6] {
+    opacity: 0
+}
+
+.fade-enter-active[data-v-82d800f6],.fade-leave-active[data-v-82d800f6] {
+    transition: opacity .5s
+}
+
+@keyframes slide-up-82d800f6 {
+    0% {
+        transform: translateY(-20%);
+        opacity: 0
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+@keyframes slide-down-82d800f6 {
+    0% {
+        transform: translateY(0);
+        opacity: 1
+    }
+
+    to {
+        transform: translateY(20%);
+        opacity: 0
+    }
+}
+
+.ipad-slide-enter-active[data-v-82d800f6] {
+    animation: ipad-slide-82d800f6 .4s ease
+}
+
+.ipad-slide-leave-active[data-v-82d800f6] {
+    animation: ipad-slide-82d800f6 .4s ease reverse
+}
+
+@keyframes ipad-slide-82d800f6 {
+    0% {
+        transform: translateY(120%)
+    }
+
+    to {
+        transform: translateY(0)
+    }
+}
+
+@keyframes bounce-in-transition-82d800f6 {
+    0% {
+        transform: scale(0);
+        opacity: 0
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1
+    }
+}
+
+.compass[data-v-82d800f6] {
+    position: relative;
+    z-index: -1;
+    top: .9259259259vh;
+    height: 4.7222222222vh;
+    width: 54.6296296296vh;
+    overflow: hidden;
+    pointer-events: none
+}
+
+.compass .back[data-v-82d800f6] {
+    position: absolute;
+    top: 0;
+    height: 100%
+}
+
+.compass .back-left[data-v-82d800f6] {
+    left: 0;
+    width: 22.6851851852vh;
+    background: linear-gradient(90deg,rgba(26,26,26,0),rgba(26,26,26,.2))
+}
+
+.compass .back-center[data-v-82d800f6] {
+    left: calc(50% - 4.62963vh);
+    width: 9.2592592593vh;
+    background-color: rgba(26,26,26,.2)
+}
+
+.compass .back-right[data-v-82d800f6] {
+    right: 0;
+    width: 22.6851851852vh;
+    background: linear-gradient(90deg,rgba(26,26,26,.2),rgba(26,26,26,0))
+}
+
+.compass .arrow[data-v-82d800f6] {
+    position: absolute;
+    top: 0;
+    left: calc(50% - .69444vh);
+    width: 1.3888888889vh;
+    height: 1.2037037037vh;
+    fill: #fff
+}
+
+.compass .current-value-deg[data-v-82d800f6] {
+    position: absolute;
+    z-index: 3;
+    bottom: .2777777778vh;
+    height: 2.037037037vh;
+    text-align: center;
+    font-family: ProximaNova-Condensed,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.8518518519vh;
+    color: #fcfcfc;
+    text-shadow: 0 .0925925926vh .2777777778vh rgba(0,0,0,.2)
+}
+
+.compass .degrees-wrapper[data-v-82d800f6] {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    overflow: hidden
+}
+
+.compass .degrees-wrapper .degrees[data-v-82d800f6] {
+    position: relative;
+    z-index: 2;
+    padding-top: 1.2037037037vh;
+    height: 100%
+}
+
+.compass .degrees-wrapper .degrees.transition[data-v-82d800f6] {
+    transition: transform .1s ease
+}
+
+.compass .degrees-wrapper .degrees .degree[data-v-82d800f6] {
+    min-width: 2.7777777778vh;
+    max-width: 2.7777777778vh
+}
+
+.compass .degrees-wrapper .degrees .degree .mark[data-v-82d800f6] {
+    margin-bottom: .7407407407vh;
+    width: .1851851852vh;
+    height: .462962963vh;
+    background-color: hsla(0,0%,100%,.7);
+    box-shadow: 0 .0925925926vh .1851851852vh rgba(0,0,0,.1)
+}
+
+.compass .degrees-wrapper .degrees .degree .mark.big[data-v-82d800f6] {
+    margin-bottom: .2777777778vh;
+    width: .3703703704vh;
+    height: .9259259259vh;
+    background-color: #fff
+}
+
+.compass .degrees-wrapper .degrees .degree .degreeValue[data-v-82d800f6] {
+    font-size: 1.2962962963vh;
+    color: hsla(0,0%,99%,.75);
+    line-height: 1.4814814815vh
+}
+
+.compass .degrees-wrapper .degrees .degree .degreeValue[data-v-82d800f6],.compass .degrees-wrapper .degrees .degree .letterMark[data-v-82d800f6] {
+    font-family: ProximaNova-Condensed,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-shadow: 0 .0925925926vh .2777777778vh rgba(0,0,0,.2);
+    transition: color .1s ease
+}
+
+.compass .degrees-wrapper .degrees .degree .letterMark[data-v-82d800f6] {
+    font-size: 1.4814814815vh;
+    color: #fcfcfc;
+    line-height: 1.6666666667vh
+}
+
+.compass .degrees-wrapper .degrees .degree.darkened .degreeValue[data-v-82d800f6],.compass .degrees-wrapper .degrees .degree.darkened .letterMark[data-v-82d800f6] {
+    color: hsla(0,0%,99%,.3)
+}
+
+.compass.capture[data-v-82d800f6] {
+    top: 11.1111111111vh
+}
+
+.compass.miniGamesIsPlaying[data-v-82d800f6] {
+    top: 6.2037037037vh
+}

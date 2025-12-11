@@ -1,0 +1,14 @@
+.main-cover[data-v-f24a0ae4] {
+    overflow: hidden;
+}
+.full-width[data-v-f24a0ae4] {
+    width: 100%
+}
+
+.full-height[data-v-f24a0ae4] {
+    height: 100%
+}
+.hideshud[data-v-f24a0ae4] {
+        inset: 0px;
+    display: none;
+}
