@@ -439,7 +439,7 @@ namespace NeptuneEvo.Chars
                         }
                     }
 
-                    // ✅ ШАГ 1: ВСЕГДА ДОБАВЛЯЕМ БАЗОВЫЙ МАГАЗИН ПЕРВЫМ (если есть)
+                    // ✅ ШАГ 1: НАХОДИМ БАЗОВЫЙ МАГАЗИН (но не добавляем его сразу)
                     uint? baseClipHash = null;
 
                     // Ищем CLIP_01 (базовый магазин)
@@ -454,26 +454,27 @@ namespace NeptuneEvo.Chars
                         }
                     }
 
-                    if (baseClipHash.HasValue)
-                    {
-                        _JsonInventoryItemData.Add(baseClipHash.Value);
-                        Log.Write($"[WEAPONCOMPONENTS] Added BASE CLIP (CLIP_01): {baseClipHash.Value}");
-                    }
-
-                    // ✅ ШАГ 2: ДОБАВЛЯЕМ УСТАНОВЛЕННЫЕ МАГАЗИНЫ
+                    // ✅ ШАГ 2: ДОБАВЛЯЕМ УСТАНОВЛЕННЫЕ МАГАЗИНЫ (только один магазин!)
                     if (installedMods.ContainsKey(wComponentsType.Clip2))
                     {
+                        // Если установлен бронебойный магазин - используем только его
                         _JsonInventoryItemData.Add(installedMods[wComponentsType.Clip2]);
                         Log.Write($"[WEAPONCOMPONENTS] Added Clip2 (AP): {installedMods[wComponentsType.Clip2]}");
                     }
                     else if (installedMods.ContainsKey(wComponentsType.Clip))
                     {
-                        // Проверяем, не базовый ли это магазин
+                        // Если установлен увеличенный магазин - используем его
                         if (!baseClipHash.HasValue || installedMods[wComponentsType.Clip] != baseClipHash.Value)
                         {
                             _JsonInventoryItemData.Add(installedMods[wComponentsType.Clip]);
                             Log.Write($"[WEAPONCOMPONENTS] Added extended Clip:  {installedMods[wComponentsType.Clip]}");
                         }
+                    }
+                    else if (baseClipHash.HasValue)
+                    {
+                        // Если никакой другой магазин не установлен - используем базовый
+                        _JsonInventoryItemData.Add(baseClipHash.Value);
+                        Log.Write($"[WEAPONCOMPONENTS] Added BASE CLIP (CLIP_01): {baseClipHash.Value}");
                     }
 
                     // ✅ ШАГ 3: ДОБАВЛЯЕМ ОСТАЛЬНЫЕ МОДИФИКАЦИИ
