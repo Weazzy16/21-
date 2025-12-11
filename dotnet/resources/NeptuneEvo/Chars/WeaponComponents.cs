@@ -165,7 +165,7 @@ namespace NeptuneEvo.Chars
                     { NAPI.Util.GetHashKey("COMPONENT_AT_AR_SUPP"), new wComponentData("WCT_SUPP", "WCD_AR_SUPP", 1100, wComponentsType.Suppressor) },
                 })
             },
-{ NAPI. Util.GetHashKey("WEAPON_CARBINERIFLE_MK2"), new wComponentsData(8, new Dictionary<uint, wComponentData>()
+{ NAPI.Util.GetHashKey("WEAPON_CARBINERIFLE_MK2"), new wComponentsData(8, new Dictionary<uint, wComponentData>()
     {
         // ✅ БАЗОВЫЙ МАГАЗИН (ОБЯЗАТЕЛЕН!)
         { NAPI.Util.GetHashKey("COMPONENT_CARBINERIFLE_MK2_CLIP_01"), new wComponentData("WCT_CLIP1", "WCD_CR_CLIP1", 0, wComponentsType.Clip) },
@@ -174,12 +174,12 @@ namespace NeptuneEvo.Chars
         { NAPI.Util.GetHashKey("COMPONENT_CARBINERIFLE_MK2_CLIP_02"), new wComponentData("WCT_CLIP2", "WCD_CR_CLIP2", 0, wComponentsType.Clip) },
         
         // ✅ БРОНЕБОЙНЫЙ МАГАЗИН
-        { NAPI. Util.GetHashKey("COMPONENT_CARBINERIFLE_MK2_CLIP_ARMORPIERCING"), new wComponentData("WCT_CLIP_AP", "WCD_CLIP_AP", 0, wComponentsType.Clip2) },
+        { NAPI.Util.GetHashKey("COMPONENT_CARBINERIFLE_MK2_CLIP_ARMORPIERCING"), new wComponentData("WCT_CLIP_AP", "WCD_CLIP_AP", 0, wComponentsType.Clip2) },
 
         { NAPI.Util.GetHashKey("COMPONENT_AT_AR_SUPP"), new wComponentData("WCT_SUPP", "WCD_AR_SUPP", 1100, wComponentsType.Suppressor) },
         { NAPI.Util.GetHashKey("COMPONENT_AT_SCOPE_MEDIUM_MK2"), new wComponentData("WCT_SCOPE_MED", "WCD_SCOPE_MED", 1400, wComponentsType.Scope) },
         { NAPI.Util.GetHashKey("COMPONENT_AT_SIGHTS"), new wComponentData("WCT_HOLO", "WCD_HOLO", 1500, wComponentsType.Scope2) },
-        { NAPI.Util.GetHashKey("COMPONENT_AT_AR_FLSH"), new wComponentData("WCT_FLASH", "WCD_FLASH", 900, wComponentsType. Flashlight) },
+        { NAPI.Util.GetHashKey("COMPONENT_AT_AR_FLSH"), new wComponentData("WCT_FLASH", "WCD_FLASH", 900, wComponentsType.Flashlight) },
         { NAPI.Util.GetHashKey("COMPONENT_AT_AR_AFGRIP"), new wComponentData("WCT_GRIP", "WCD_GRIP", 1300, wComponentsType.Grip) },
     })
 },
