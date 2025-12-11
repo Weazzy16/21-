@@ -3195,37 +3195,35 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\weazzy\\.nuget\\packages\\": {}
+    "/home/runner/work/21-/.codeql-scratch/dbs/csharp/working/packages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Majestic-server\\dotnet\\resources\\NeptuneEvo\\NeptuneEvo.csproj",
+      "projectUniqueName": "/home/runner/work/21-/21-/dotnet/resources/NeptuneEvo/NeptuneEvo.csproj",
       "projectName": "NeptuneEvo",
-      "projectPath": "D:\\Majestic-server\\dotnet\\resources\\NeptuneEvo\\NeptuneEvo.csproj",
-      "packagesPath": "C:\\Users\\weazzy\\.nuget\\packages\\",
-      "outputPath": "D:\\Majestic-server\\dotnet\\resources\\NeptuneEvo\\obj\\",
+      "projectPath": "/home/runner/work/21-/21-/dotnet/resources/NeptuneEvo/NeptuneEvo.csproj",
+      "packagesPath": "/home/runner/work/21-/.codeql-scratch/dbs/csharp/working/packages",
+      "outputPath": "/home/runner/work/21-/21-/dotnet/resources/NeptuneEvo/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\weazzy\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/runner/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Majestic-server\\dotnet\\resources\\Localization\\Localization.csproj": {
-              "projectPath": "D:\\Majestic-server\\dotnet\\resources\\Localization\\Localization.csproj"
+            "/home/runner/work/21-/21-/dotnet/resources/Localization/Localization.csproj": {
+              "projectPath": "/home/runner/work/21-/21-/dotnet/resources/Localization/Localization.csproj"
             },
-            "D:\\Majestic-server\\dotnet\\resources\\NeptuneEvoSDK\\NeptuneEvoSDK.csproj": {
-              "projectPath": "D:\\Majestic-server\\dotnet\\resources\\NeptuneEvoSDK\\NeptuneEvoSDK.csproj"
+            "/home/runner/work/21-/21-/dotnet/resources/NeptuneEvoSDK/NeptuneEvoSDK.csproj": {
+              "projectPath": "/home/runner/work/21-/21-/dotnet/resources/NeptuneEvoSDK/NeptuneEvoSDK.csproj"
             }
           }
         }
@@ -3240,7 +3238,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "netcoreapp3.1": {
@@ -3306,10 +3304,6 @@
           {
             "name": "Microsoft.NETCore.App.Ref",
             "version": "[3.1.0, 3.1.0]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[3.1.0, 3.1.0]"
           }
         ],
         "frameworkReferences": {
@@ -3317,7 +3311,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.100/RuntimeIdentifierGraph.json"
       }
     }
   },
@@ -3326,7 +3320,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "У пакета \"Newtonsoft.Json\" 12.0.3 есть известная уязвимость https://github.com/advisories/GHSA-5crp-9r3c-p9vr (уровень серьезности: высокий)",
+      "message": "Package 'Newtonsoft.Json' 12.0.3 has a known high severity vulnerability, https://github.com/advisories/GHSA-5crp-9r3c-p9vr",
       "libraryId": "Newtonsoft.Json",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"

@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Majestic-server\\dotnet\\resources\\Localization\\Localization.csproj": {}
+    "/home/runner/work/21-/21-/dotnet/resources/Localization/Localization.csproj": {}
   },
   "projects": {
-    "D:\\Majestic-server\\dotnet\\resources\\Localization\\Localization.csproj": {
+    "/home/runner/work/21-/21-/dotnet/resources/Localization/Localization.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Majestic-server\\dotnet\\resources\\Localization\\Localization.csproj",
+        "projectUniqueName": "/home/runner/work/21-/21-/dotnet/resources/Localization/Localization.csproj",
         "projectName": "Localization",
-        "projectPath": "D:\\Majestic-server\\dotnet\\resources\\Localization\\Localization.csproj",
-        "packagesPath": "C:\\Users\\weazzy\\.nuget\\packages\\",
-        "outputPath": "D:\\Majestic-server\\dotnet\\resources\\Localization\\obj\\",
+        "projectPath": "/home/runner/work/21-/21-/dotnet/resources/Localization/Localization.csproj",
+        "packagesPath": "/home/runner/work/21-/.codeql-scratch/dbs/csharp/working/packages",
+        "outputPath": "/home/runner/work/21-/21-/dotnet/resources/Localization/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\weazzy\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/runner/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "netcoreapp3.1": {
@@ -74,10 +72,6 @@
             {
               "name": "Microsoft.NETCore.App.Ref",
               "version": "[3.1.0, 3.1.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
             }
           ],
           "frameworkReferences": {
@@ -85,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }
