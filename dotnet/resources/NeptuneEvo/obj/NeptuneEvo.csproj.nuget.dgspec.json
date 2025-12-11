@@ -10,7 +10,7 @@
         "projectUniqueName": "/home/runner/work/21-/21-/dotnet/resources/Localization/Localization.csproj",
         "projectName": "Localization",
         "projectPath": "/home/runner/work/21-/21-/dotnet/resources/Localization/Localization.csproj",
-        "packagesPath": "/home/runner/work/21-/.codeql-scratch/dbs/csharp/working/packages",
+        "packagesPath": "/home/runner/.nuget/packages/",
         "outputPath": "/home/runner/work/21-/21-/dotnet/resources/Localization/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
@@ -89,7 +89,7 @@
         "projectUniqueName": "/home/runner/work/21-/21-/dotnet/resources/NeptuneEvo/NeptuneEvo.csproj",
         "projectName": "NeptuneEvo",
         "projectPath": "/home/runner/work/21-/21-/dotnet/resources/NeptuneEvo/NeptuneEvo.csproj",
-        "packagesPath": "/home/runner/work/21-/.codeql-scratch/dbs/csharp/working/packages",
+        "packagesPath": "/home/runner/.nuget/packages/",
         "outputPath": "/home/runner/work/21-/21-/dotnet/resources/NeptuneEvo/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
@@ -207,7 +207,7 @@
         "projectUniqueName": "/home/runner/work/21-/21-/dotnet/resources/NeptuneEvoSDK/NeptuneEvoSDK.csproj",
         "projectName": "NeptuneEvoSDK",
         "projectPath": "/home/runner/work/21-/21-/dotnet/resources/NeptuneEvoSDK/NeptuneEvoSDK.csproj",
-        "packagesPath": "/home/runner/work/21-/.codeql-scratch/dbs/csharp/working/packages",
+        "packagesPath": "/home/runner/.nuget/packages/",
         "outputPath": "/home/runner/work/21-/21-/dotnet/resources/NeptuneEvoSDK/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [

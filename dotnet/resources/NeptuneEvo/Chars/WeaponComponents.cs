@@ -464,11 +464,8 @@ namespace NeptuneEvo.Chars
                     else if (installedMods.ContainsKey(wComponentsType.Clip))
                     {
                         // Если установлен увеличенный магазин - используем его
-                        if (!baseClipHash.HasValue || installedMods[wComponentsType.Clip] != baseClipHash.Value)
-                        {
-                            _JsonInventoryItemData.Add(installedMods[wComponentsType.Clip]);
-                            Log.Write($"[WEAPONCOMPONENTS] Added extended Clip:  {installedMods[wComponentsType.Clip]}");
-                        }
+                        _JsonInventoryItemData.Add(installedMods[wComponentsType.Clip]);
+                        Log.Write($"[WEAPONCOMPONENTS] Added extended Clip: {installedMods[wComponentsType.Clip]}");
                     }
                     else if (baseClipHash.HasValue)
                     {

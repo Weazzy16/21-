@@ -1541,7 +1541,7 @@
     ]
   },
   "packageFolders": {
-    "/home/runner/work/21-/.codeql-scratch/dbs/csharp/working/packages": {}
+    "/home/runner/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
@@ -1549,7 +1549,7 @@
       "projectUniqueName": "/home/runner/work/21-/21-/dotnet/resources/Localization/Localization.csproj",
       "projectName": "Localization",
       "projectPath": "/home/runner/work/21-/21-/dotnet/resources/Localization/Localization.csproj",
-      "packagesPath": "/home/runner/work/21-/.codeql-scratch/dbs/csharp/working/packages",
+      "packagesPath": "/home/runner/.nuget/packages/",
       "outputPath": "/home/runner/work/21-/21-/dotnet/resources/Localization/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [

@@ -4,16 +4,16 @@
     <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
-    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/home/runner/work/21-/.codeql-scratch/dbs/csharp/working/packages</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/home/runner/work/21-/.codeql-scratch/dbs/csharp/working/packages</NuGetPackageFolders>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/home/runner/.nuget/packages/</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/home/runner/.nuget/packages/</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">7.0.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <SourceRoot Include="/home/runner/work/21-/.codeql-scratch/dbs/csharp/working/packages/" />
+    <SourceRoot Include="/home/runner/.nuget/packages/" />
   </ItemGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <None Include="$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/CopyMe.MySql.tt.txt" Condition="Exists('$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/CopyMe.MySql.tt.txt')">
+    <None Include="$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/CopyMe.MySql.tt.txt" Condition="Exists('$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/CopyMe.MySql.tt.txt')">
       <NuGetPackageId>linq2db.MySql</NuGetPackageId>
       <NuGetPackageVersion>3.3.0</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
@@ -21,7 +21,7 @@
       <Private>False</Private>
       <Link>LinqToDB.Templates/CopyMe.MySql.tt.txt</Link>
     </None>
-    <None Include="$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/DataAnnotations.ttinclude" Condition="Exists('$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/DataAnnotations.ttinclude')">
+    <None Include="$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/DataAnnotations.ttinclude" Condition="Exists('$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/DataAnnotations.ttinclude')">
       <NuGetPackageId>linq2db.MySql</NuGetPackageId>
       <NuGetPackageVersion>3.3.0</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
@@ -29,7 +29,7 @@
       <Private>False</Private>
       <Link>LinqToDB.Templates/DataAnnotations.ttinclude</Link>
     </None>
-    <None Include="$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/DataModel.ttinclude" Condition="Exists('$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/DataModel.ttinclude')">
+    <None Include="$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/DataModel.ttinclude" Condition="Exists('$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/DataModel.ttinclude')">
       <NuGetPackageId>linq2db.MySql</NuGetPackageId>
       <NuGetPackageVersion>3.3.0</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
@@ -37,7 +37,7 @@
       <Private>False</Private>
       <Link>LinqToDB.Templates/DataModel.ttinclude</Link>
     </None>
-    <None Include="$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/EditableObject.ttinclude" Condition="Exists('$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/EditableObject.ttinclude')">
+    <None Include="$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/EditableObject.ttinclude" Condition="Exists('$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/EditableObject.ttinclude')">
       <NuGetPackageId>linq2db.MySql</NuGetPackageId>
       <NuGetPackageVersion>3.3.0</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
@@ -45,7 +45,7 @@
       <Private>False</Private>
       <Link>LinqToDB.Templates/EditableObject.ttinclude</Link>
     </None>
-    <None Include="$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/Equatable.ttinclude" Condition="Exists('$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/Equatable.ttinclude')">
+    <None Include="$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/Equatable.ttinclude" Condition="Exists('$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/Equatable.ttinclude')">
       <NuGetPackageId>linq2db.MySql</NuGetPackageId>
       <NuGetPackageVersion>3.3.0</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
@@ -53,7 +53,7 @@
       <Private>False</Private>
       <Link>LinqToDB.Templates/Equatable.ttinclude</Link>
     </None>
-    <None Include="$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/Humanizer.ttinclude" Condition="Exists('$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/Humanizer.ttinclude')">
+    <None Include="$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/Humanizer.ttinclude" Condition="Exists('$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/Humanizer.ttinclude')">
       <NuGetPackageId>linq2db.MySql</NuGetPackageId>
       <NuGetPackageVersion>3.3.0</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
@@ -61,7 +61,7 @@
       <Private>False</Private>
       <Link>LinqToDB.Templates/Humanizer.ttinclude</Link>
     </None>
-    <None Include="$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/LinqToDB.MySql.Tools.ttinclude" Condition="Exists('$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/LinqToDB.MySql.Tools.ttinclude')">
+    <None Include="$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/LinqToDB.MySql.Tools.ttinclude" Condition="Exists('$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/LinqToDB.MySql.Tools.ttinclude')">
       <NuGetPackageId>linq2db.MySql</NuGetPackageId>
       <NuGetPackageVersion>3.3.0</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
@@ -69,7 +69,7 @@
       <Private>False</Private>
       <Link>LinqToDB.Templates/LinqToDB.MySql.Tools.ttinclude</Link>
     </None>
-    <None Include="$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/LinqToDB.MySql.ttinclude" Condition="Exists('$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/LinqToDB.MySql.ttinclude')">
+    <None Include="$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/LinqToDB.MySql.ttinclude" Condition="Exists('$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/LinqToDB.MySql.ttinclude')">
       <NuGetPackageId>linq2db.MySql</NuGetPackageId>
       <NuGetPackageVersion>3.3.0</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
@@ -77,7 +77,7 @@
       <Private>False</Private>
       <Link>LinqToDB.Templates/LinqToDB.MySql.ttinclude</Link>
     </None>
-    <None Include="$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/LinqToDB.Tools.ttinclude" Condition="Exists('$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/LinqToDB.Tools.ttinclude')">
+    <None Include="$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/LinqToDB.Tools.ttinclude" Condition="Exists('$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/LinqToDB.Tools.ttinclude')">
       <NuGetPackageId>linq2db.MySql</NuGetPackageId>
       <NuGetPackageVersion>3.3.0</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
@@ -85,7 +85,7 @@
       <Private>False</Private>
       <Link>LinqToDB.Templates/LinqToDB.Tools.ttinclude</Link>
     </None>
-    <None Include="$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/LinqToDB.ttinclude" Condition="Exists('$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/LinqToDB.ttinclude')">
+    <None Include="$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/LinqToDB.ttinclude" Condition="Exists('$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/LinqToDB.ttinclude')">
       <NuGetPackageId>linq2db.MySql</NuGetPackageId>
       <NuGetPackageVersion>3.3.0</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
@@ -93,7 +93,7 @@
       <Private>False</Private>
       <Link>LinqToDB.Templates/LinqToDB.ttinclude</Link>
     </None>
-    <None Include="$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/MultipleFiles.ttinclude" Condition="Exists('$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/MultipleFiles.ttinclude')">
+    <None Include="$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/MultipleFiles.ttinclude" Condition="Exists('$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/MultipleFiles.ttinclude')">
       <NuGetPackageId>linq2db.MySql</NuGetPackageId>
       <NuGetPackageVersion>3.3.0</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
@@ -101,7 +101,7 @@
       <Private>False</Private>
       <Link>LinqToDB.Templates/MultipleFiles.ttinclude</Link>
     </None>
-    <None Include="$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/NotifyDataErrorInfo.ttinclude" Condition="Exists('$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/NotifyDataErrorInfo.ttinclude')">
+    <None Include="$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/NotifyDataErrorInfo.ttinclude" Condition="Exists('$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/NotifyDataErrorInfo.ttinclude')">
       <NuGetPackageId>linq2db.MySql</NuGetPackageId>
       <NuGetPackageVersion>3.3.0</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
@@ -109,7 +109,7 @@
       <Private>False</Private>
       <Link>LinqToDB.Templates/NotifyDataErrorInfo.ttinclude</Link>
     </None>
-    <None Include="$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/NotifyPropertyChanged.ttinclude" Condition="Exists('$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/NotifyPropertyChanged.ttinclude')">
+    <None Include="$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/NotifyPropertyChanged.ttinclude" Condition="Exists('$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/NotifyPropertyChanged.ttinclude')">
       <NuGetPackageId>linq2db.MySql</NuGetPackageId>
       <NuGetPackageVersion>3.3.0</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
@@ -117,7 +117,7 @@
       <Private>False</Private>
       <Link>LinqToDB.Templates/NotifyPropertyChanged.ttinclude</Link>
     </None>
-    <None Include="$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/ObsoleteAttributes.ttinclude" Condition="Exists('$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/ObsoleteAttributes.ttinclude')">
+    <None Include="$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/ObsoleteAttributes.ttinclude" Condition="Exists('$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/ObsoleteAttributes.ttinclude')">
       <NuGetPackageId>linq2db.MySql</NuGetPackageId>
       <NuGetPackageVersion>3.3.0</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
@@ -125,7 +125,7 @@
       <Private>False</Private>
       <Link>LinqToDB.Templates/ObsoleteAttributes.ttinclude</Link>
     </None>
-    <None Include="$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/PluralizationService.ttinclude" Condition="Exists('$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/PluralizationService.ttinclude')">
+    <None Include="$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/PluralizationService.ttinclude" Condition="Exists('$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/PluralizationService.ttinclude')">
       <NuGetPackageId>linq2db.MySql</NuGetPackageId>
       <NuGetPackageVersion>3.3.0</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
@@ -133,7 +133,7 @@
       <Private>False</Private>
       <Link>LinqToDB.Templates/PluralizationService.ttinclude</Link>
     </None>
-    <None Include="$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/T4Model.ttinclude" Condition="Exists('$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/T4Model.ttinclude')">
+    <None Include="$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/T4Model.ttinclude" Condition="Exists('$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/T4Model.ttinclude')">
       <NuGetPackageId>linq2db.MySql</NuGetPackageId>
       <NuGetPackageVersion>3.3.0</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
@@ -141,7 +141,7 @@
       <Private>False</Private>
       <Link>LinqToDB.Templates/T4Model.ttinclude</Link>
     </None>
-    <None Include="$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/Validation.ttinclude" Condition="Exists('$(NuGetPackageRoot)/linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/Validation.ttinclude')">
+    <None Include="$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/Validation.ttinclude" Condition="Exists('$(NuGetPackageRoot)linq2db.mysql/3.3.0/contentFiles/any/any/LinqToDB.Templates/Validation.ttinclude')">
       <NuGetPackageId>linq2db.MySql</NuGetPackageId>
       <NuGetPackageVersion>3.3.0</NuGetPackageVersion>
       <NuGetItemType>None</NuGetItemType>
@@ -151,9 +151,9 @@
     </None>
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)/linq2db.mysql/3.3.0/build/linq2db.MySql.props" Condition="Exists('$(NuGetPackageRoot)/linq2db.mysql/3.3.0/build/linq2db.MySql.props')" />
+    <Import Project="$(NuGetPackageRoot)linq2db.mysql/3.3.0/build/linq2db.MySql.props" Condition="Exists('$(NuGetPackageRoot)linq2db.mysql/3.3.0/build/linq2db.MySql.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Pkglinq2db_MySql Condition=" '$(Pkglinq2db_MySql)' == '' ">/home/runner/work/21-/.codeql-scratch/dbs/csharp/working/packages/linq2db.mysql/3.3.0</Pkglinq2db_MySql>
+    <Pkglinq2db_MySql Condition=" '$(Pkglinq2db_MySql)' == '' ">/home/runner/.nuget/packages/linq2db.mysql/3.3.0</Pkglinq2db_MySql>
   </PropertyGroup>
 </Project>
